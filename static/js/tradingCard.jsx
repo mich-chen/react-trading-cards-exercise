@@ -53,10 +53,55 @@ ReactDOM.render(
 ReactDOM.render(
   (
     <TradingCard
-      name="Merge"
+      name="merge"
       skill="putting things together"
       imgUrl="/static/img/merge.jpg"
     />
   ),
   document.querySelector('#merge')
 );
+
+ReactDOM.render(
+  (
+    <TradingCard
+      name="off-by-one"
+      skill="forgetting stuff"
+      imgUrl="/static/img/off-by-one.jpg"
+    />
+  ),
+  document.querySelector('#off-by-one')
+);
+
+ReactDOM.render(
+  (
+    <TradingCard
+      name="polymorphism"
+      skill="remembering random facts"
+      imgUrl="/static/img/polymorphism.jpg"
+    />
+  ),
+  document.querySelector('#polymorphism')
+);
+
+ReactDOM.render(
+  (
+    <TradingCard
+      name="seedpy"
+      skill="eating seeds"
+      imgUrl="/static/img/seedpy.jpg"
+    />
+  ),
+  document.querySelector('#seedpy')
+);
+
+ReactDOM.render(
+  (
+    <TradingCard
+      name="shortstack-overflow"
+      skill="answering stack overflow questions"
+      imgUrl="/static/img/shortstack-overflow.jpg"
+    />
+  ),
+  document.querySelector('#shortstack-overflow')
+);
+
