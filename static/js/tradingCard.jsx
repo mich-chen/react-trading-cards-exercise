@@ -61,11 +61,19 @@ function TradingCard(props) {
 }
 
 function TradingCardContainer() {
+  // create empty array
+  const paragraphs = [];
+  // for each card data in data array
+  for (const currentCard of tradingCardData) {
+    // add an html <p> tag with the card's name to paragraphs array
+    paragraphs.push(<p>{currentCard.name}</p>);
+  }
+
+  // create new React fragment element with the <p> tag html from paragraphs into this section in html.
   return (
-    <div className="test">
-      success
-      hello world
-    </div>
+    <>
+      {paragraphs}
+    </>
   );
 }
 
