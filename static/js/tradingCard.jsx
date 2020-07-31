@@ -62,18 +62,23 @@ function TradingCard(props) {
 
 function TradingCardContainer() {
   // create empty array
-  const paragraphs = [];
+  const tradingCards = [];
   // for each card data in data array
   for (const currentCard of tradingCardData) {
-    // add an html <p> tag with the card's name to paragraphs array
-    paragraphs.push(<p>{currentCard.name}</p>);
-  }
+    // add an html <p> tag with the card's name to tradingCards array
+    tradingCards.push(<TradingCard
+        name={currentCard.name}
+        skill={currentCard.skill}
+        imgUrl={currentCard.imgUrl} 
+        />
+      );
+  } 
 
-  // create new React fragment element with the <p> tag html from paragraphs into this section in html.
+  // create new React fragment element with the <p> tag html from tradingCards into this section in html.
   return (
-    <>
-      {paragraphs}
-    </>
+    <React.Fragment>
+      {tradingCards}
+    </React.Fragment>
   );
 }
 
